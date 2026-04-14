@@ -24,9 +24,28 @@ public class UsuarioServicio {
         if(repositorioUsuario.findByCorreo(datos.getCorreo()).isPresent()){
             throw new ResponseStatusException(
                     HttpStatus.CONFLICT,
-                    "Ya existe un correo regisitrado igual al que me entregas"
+                    "Ya existe un correo <<<<regisitrado>>>> igual al que me entregas"
             );
         }
+
+        if(datos.getNombres().isEmpty()||datos.getNombres().isBlank()){
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,
+                    "El nombre digitado no puede enviarse vacio"
+            );
+        }
+
+        if(datos.getContraseña().length()<6){
+            throw new ResponseStatusException(
+              HttpStatus.BAD_REQUEST,
+              "La contarseña debe tener al menos 6 caracteres"
+            );
+
+        }
+
+        //Si paso la zona de validaciones procedo a preparar la
+        // receta(Ejecuto la query que se necesite)
+        this.repositorioUsuario.save(datos);
 
         return false;
     }
