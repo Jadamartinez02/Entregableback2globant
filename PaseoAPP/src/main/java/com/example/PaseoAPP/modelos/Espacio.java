@@ -4,4 +4,6 @@ public class Espacio {
 
     //id nombre descripcion foto aforo
 
+
+
 }
