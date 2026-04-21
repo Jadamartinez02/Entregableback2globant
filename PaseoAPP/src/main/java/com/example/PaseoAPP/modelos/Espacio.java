@@ -14,15 +14,15 @@ public class Espacio {
     private UUID id;
     private String nombre;
     private String descripcion;
-    private Long afoto;
+    private Long aforo;
     private String foto;
     public Espacio() {
     }
-    public Espacio(UUID id, String nombre, String descripcion, Long afoto, String foto) {
+    public Espacio(UUID id, String nombre, String descripcion, Long afoto, String foto, Long aforo) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.afoto = afoto;
+        this.aforo = aforo;
         this.foto = foto;
     }
     public UUID getId() {
@@ -43,17 +43,18 @@ public class Espacio {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    public Long getAfoto() {
-        return afoto;
-    }
-    public void setAfoto(Long afoto) {
-        this.afoto = afoto;
-    }
+
     public String getFoto() {
         return foto;
     }
     public void setFoto(String foto) {
         this.foto = foto;
+    }
+    public Long getAforo() {
+        return aforo;
+    }
+    public void setAforo(Long aforo) {
+        this.aforo = aforo;
     }
 
 }

@@ -18,7 +18,7 @@ public class UsuarioServicio {
     @Autowired
     private IRepositorioUsuario repositorioUsuario;
 
-    public boolean guardarUsuarioEnBD(Usuario datos){
+    public Usuario guardarUsuarioEnBD(Usuario datos){
         //validar que datos me envian y si estos cumplen las reglas del negocio
         //Guardar los datos en BD con ayuda del repositorio
         //Validar que el correo a registrar no se haya guardado previamente
@@ -33,8 +33,8 @@ public class UsuarioServicio {
         if (datos.getContraseña().length()<6) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "La contrasela debe tener al menos 6 caracteres");
         }
-        this.repositorioUsuario.save(datos);
-        return false;
+        
+        return this.repositorioUsuario.save(datos);
     }
     public Usuario modificarUsuarioEnBD(Usuario datos, UUID id){
         Optional<Usuario> usuarioBuscado =this.repositorioUsuario.findById(id);
@@ -49,10 +49,13 @@ public class UsuarioServicio {
         return this.repositorioUsuario.save(usuarioENcontrado);
 
     }
-    public boolean eliminarUsuarioEnBD(UUID id){
+    public void eliminarUsuarioEnBD(UUID id){
         //Buscar y validar si el ID que me envian existe
         //Elimino el registro en BD
-        return false;
+        if (id == null) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "id no encontrado");
+        }
+        this.repositorioUsuario.deleteById(id);
     }
     public List<Usuario> buscarUsuariosEnBD(){
         //**** Dependiendo del parametro de busqueda debo implementar validaciones
