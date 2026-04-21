@@ -26,19 +26,19 @@ public class EspacioServicio {
         }
         return this.repositorioEspacio.save(datos);
     }
-        public Espacio modificarReserva(Espacio datos, UUID id){
+        public Espacio modificarEspacio(Espacio datos, UUID id){
         Optional<Espacio> datoBuscado = this.repositorioEspacio.findById(id);
         Espacio datoEncontrado = datoBuscado.get();
         datoEncontrado.setNombre(datos.getNombre());
         return this.repositorioEspacio.save(datos);
     }
-        public void eliminarReserva(UUID id){
+        public void eliminarEspacio(UUID id){
         if (id == null) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "id no encontrado");
         }
         this.repositorioEspacio.deleteById(id);
     }
-        public List<Espacio> buscarReserva(){
+        public List<Espacio> buscarEspacio(){
         return this.repositorioEspacio.findAll();
     }
 }

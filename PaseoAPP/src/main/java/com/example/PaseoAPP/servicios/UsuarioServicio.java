@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -52,7 +53,8 @@ public class UsuarioServicio {
     public void eliminarUsuarioEnBD(UUID id){
         //Buscar y validar si el ID que me envian existe
         //Elimino el registro en BD
-        if (id == null) {
+        Optional<Usuario> usuarioQueEstoyBuscando = this.repositorioUsuario.findById(id);
+        if (usuarioQueEstoyBuscando.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "id no encontrado");
         }
         this.repositorioUsuario.deleteById(id);

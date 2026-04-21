@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e4747f3-65d1-4f84-9b89-77a9bbc09283" name="Changes" comment="" />
+    <list default="true" id="6e4747f3-65d1-4f84-9b89-77a9bbc09283" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaseoAPP/src/main/java/com/example/PaseoAPP/controlador/EspacioControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaseoAPP/src/main/java/com/example/PaseoAPP/controlador/EspacioControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaseoAPP/src/main/java/com/example/PaseoAPP/controlador/ReservControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaseoAPP/src/main/java/com/example/PaseoAPP/controlador/ReservaControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaseoAPP/src/main/java/com/example/PaseoAPP/controlador/UsuarioControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaseoAPP/src/main/java/com/example/PaseoAPP/controlador/UsuarioControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaseoAPP/src/main/java/com/example/PaseoAPP/servicios/EspacioServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaseoAPP/src/main/java/com/example/PaseoAPP/servicios/EspacioServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaseoAPP/src/main/java/com/example/PaseoAPP/servicios/UsuarioServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaseoAPP/src/main/java/com/example/PaseoAPP/servicios/UsuarioServicio.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,12 +26,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3BOcqoFXHbi6WrmBTFOPGGIU4Bh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,7 +44,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true"
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "JavierDevelop",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -46,5 +63,8 @@
       <updated>1774363751820</updated>
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
